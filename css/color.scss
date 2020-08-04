@@ -81,3 +81,9 @@ $texts: h1, h2, h3, h4, h5, h6, subtitle1, subtitle2, body1, body2, button, capt
 .modal {
   z-index: var(--zIndex-modal);
 }
+
+@for $i from 0 through 24 {
+  .shadow-#{$i} {
+    box-shadow: var(--shadows-+$i);
+  }
+}

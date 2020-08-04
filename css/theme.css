@@ -393,4 +393,21 @@ body {
 .button {
     user-select: none;
     cursor: pointer;
+    border-radius: var(--shape-borderRadius);
+    padding: 5px;
 }
+
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    z-index: var(--zIndex-modal);
+    border-radius: var(--shape-borderRadius);
+}
+
+.center {
+    text-align: center;
+}
+
