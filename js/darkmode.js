@@ -3,11 +3,11 @@ const mql = window.matchMedia('(prefers-color-scheme: dark)')
 
 function setDarkMode() {
     if(mql.matches) {
-        document.body.classList.add("dark");
-        document.body.classList.remove("light");
+        document.documentElement.classList.add("dark");
+        document.documentElement.classList.remove("light");
     } else {
-        document.body.classList.remove("dark");
-        document.body.classList.add("light");
+        document.documentElement.classList.remove("dark");
+        document.documentElement.classList.add("light");
     }
 }
 
